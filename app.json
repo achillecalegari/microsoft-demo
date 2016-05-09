@@ -1,0 +1,29 @@
+{
+  "name": "microsoft-demo",
+  "scripts": {
+  },
+  "env": {
+    "OPENTOK_KEY": {
+      "required": true
+    },
+    "OPENTOK_SECRET": {
+      "required": true
+    },
+    "SLIM_MODE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "redistogo"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
